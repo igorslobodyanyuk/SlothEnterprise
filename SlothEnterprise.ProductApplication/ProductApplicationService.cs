@@ -1,9 +1,6 @@
 ﻿using System;
-using SlothEnterprise.External;
-using SlothEnterprise.External.V1;
 using SlothEnterprise.ProductApplication.Adapters;
 using SlothEnterprise.ProductApplication.Applications;
-using SlothEnterprise.ProductApplication.Products;
 
 namespace SlothEnterprise.ProductApplication
 {

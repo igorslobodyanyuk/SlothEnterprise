@@ -1,5 +1,4 @@
 ﻿using System;
-using SlothEnterprise.External.V1;
 using SlothEnterprise.ProductApplication.Products;
 
 namespace SlothEnterprise.ProductApplication.Adapters
@@ -28,11 +27,11 @@ namespace SlothEnterprise.ProductApplication.Adapters
         {
             switch (product)
             {
-                case BusinessLoans businessLoans:
+                case BusinessLoans _:
                     return _businessLoanServiceAdapter;
-                case ConfidentialInvoiceDiscount confidentialInvoiceDiscount:
+                case ConfidentialInvoiceDiscount _:
                     return _confidentialInvoiceServiceAdapter;
-                case SelectiveInvoiceDiscount selectiveInvoiceDiscount:
+                case SelectiveInvoiceDiscount _:
                     return _selectInvoiceServiceAdapter;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(product));
